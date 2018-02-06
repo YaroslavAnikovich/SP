@@ -1,0 +1,11 @@
+commit d0b35007a7457105c307a457067973a119f59ddb
+Author: Yaraslau Anikovich <yasyamail.ru@mail.ru>
+Date:   Tue Feb 6 12:01:41 2018 +0300
+
+    add status.txt
+
+commit 09151c3c7edb3dd4ed5aeac04b4c315164739ce7
+Author: Yaraslau Anikovich <yasyamail.ru@mail.ru>
+Date:   Tue Feb 6 11:53:45 2018 +0300
+
+    add .gitignore
