@@ -1,0 +1,287 @@
+body{
+    background: #f6eadb;
+}
+.header{
+    background: #8c49b6;
+    position: fixed;
+    top: 0;
+    left: -5px;
+    padding: 0 0 0 10px;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 5px;
+    z-index: 2;
+}
+.header .logo{
+    height: 48px;
+    width: 125px;
+    padding: 1% 0 0 2%;
+}
+.header .user{
+    position: relative;
+    padding-top: 10px;
+    right: 40px;
+    display: inline-block;
+    float: right;
+    top: 0px;
+}
+.header .user img{
+    position: relative;
+    top: 3px;
+    height: 40px;
+    width: 40px;
+}
+.header .user h3{
+    display: inline-block;
+    position: relative;
+    font-family: "Maiandra GD";
+    top: -10px;
+    font-size: 135%;
+    color: #2ef092;
+}
+.header .user .exit{
+    position: relative;
+    border-color: transparent;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background: transparent;
+    transition: background-color 0.2s, transform 0.3s;
+}
+.header .user .exit img{
+    position: relative;
+    margin: -3px 0 0 -5px;
+    height: 35px;
+    width: 35px;
+}
+.header .user .exit:hover{
+    background-color: #f92767;
+}
+.header .user .exit:active{
+    transform: translateY(2px);
+}
+
+
+.left-column{
+    position: fixed;
+    display: inline-block;
+    top: 150px;
+    margin: 3px;
+    width: 23%;
+    height: 30%;
+    float: left;
+}
+.left-column form{
+    margin: 5px 0 0 3px;
+}
+.left-column h3{
+    font-family: "Maiandra GD";
+    color: #2ef092;
+    font-size: 150%;
+    text-shadow: black 1px 1px 2px;
+    margin: 0px;
+}
+.left-column input{
+    color: black;
+    height: 20px;
+    min-width: 62px;
+    width: 50%;
+    font-size: 75%;
+}
+.left-column button{
+    border-color: transparent;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 0 0 -5px;
+    top: 5.5px;
+    height: 26px;
+    width: 26px;
+    transition: background-color 0.3s;
+}
+.left-column button:hover{
+    background-color: #8c49b6;
+}
+.left-column button img{
+    position: absolute;
+    filter: opacity(.6);
+    top: -2px;
+    left: -2px;
+    height: 25px;
+    width: 25px;
+}
+.left-column button img:hover{
+    filter: brightness(0) invert(1);
+}
+
+
+.post{
+    position: relative;
+    background-color: white;
+    width: 50%;
+    top: 90px;
+    left: 28%;
+    right: 5%;
+    padding: 1%;
+    margin: 0 0 15px 0;
+}
+.post h3{
+    font-family: "Maiandra GD";
+}
+.post-up{
+    position: relative;
+    width: 100%;
+}
+.post .post-up .user-photo{
+    display: inline-block;
+    height: 40px;
+    margin: 0 5px 0 0;
+}
+.post .post-up .user-name{
+    position: relative;
+    display: inline-block;
+    top: -15px;
+    font-size: 20px;
+    color: darkgrey;
+}
+.post .post-up .dateText{
+    display: inline-block;
+    position: relative;
+    font-size: 10px;
+    top: -2px;
+    left: -75px;
+    color: darkgrey;
+}
+.post .post-up .delete-button{
+    position: relative;
+    float: right;
+    top: 0px;
+    padding: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+.post .post-up .delete-image{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    transition: filter 0.3s;
+}
+.post .post-up .delete-image:hover{
+    filter: brightness(1) invert(1);
+}
+
+.post .post-content{
+    position: relative;
+    margin: -10px 5px 0 0;
+    width: 72%;
+}
+
+.post .post-down{
+    float: right;
+    position: relative;
+    width: 25%;
+}
+.post-down .like-button{
+    position: relative;
+    background: transparent;
+    border-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    width: 23%;
+    height: 17%;
+}
+.post-down .like-img{
+    position: relative;
+    bottom: -1px;
+    width: 100%;
+}
+.post-down .edit-button{
+    background: transparent;
+    border-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    width: 23%;
+    height: 17%;
+}
+.post-down .edit-img{
+    position: relative;
+    width: 100%;
+    transition: filter 0.3s;
+}
+.post-down .edit-img:hover{
+    filter: brightness(1) invert(1);
+}
+.post-down .post-comment{
+    font-size: 0.85em;
+    margin: 2px 0 7px 0;
+}
+.post-down .tags{
+    position: relative;
+    font-size: 0.8em;
+    color: blue;
+    margin: 0 0 7px 0;
+}
+
+.right-column{
+    position: fixed;
+    top: 150px;
+    right: 0px;
+    margin: 3px;
+    width: 18%;
+    height: 200px;
+    float: right;
+}
+.right-column button{
+    position: relative;
+    top: 20%;
+    left: 20%;
+    height: 60px;
+    width: 50%;
+    transition: background 0.3s;
+    font-family: "Proxima Nova Alt Rg";
+}
+.right-column button:hover{
+    background: orange;
+}
+
+.footer{
+    background: #c8e7a0;
+    position: fixed;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+}
+.footer .info{
+    margin: 7px 0 0 5px;
+    font-family: "Maiandra GD";
+}
+.footer .mail{
+    position: relative;
+    top: -28px;
+    left: -15px;
+    float: right;
+    margin: 7px 5px 0 0;
+    font-family: "Maiandra GD";
+}
+
+
+
+@font-face {
+    font-family: "Proxima Nova Alt Rg";
+    src: url("../fonts/Proxima.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: "Maiandra GD";
+    src: url("../fonts/MAIAN.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
