@@ -1,7 +1,8 @@
-body{
+body {
     background: #f6eadb;
 }
-.header{
+
+.header {
     background: #8c49b6;
     position: fixed;
     top: 0;
@@ -13,12 +14,14 @@ body{
     box-shadow: 0 0 5px;
     z-index: 2;
 }
-.header .logo{
+
+.header .logo {
     height: 48px;
     width: 125px;
     padding: 1% 0 0 2%;
 }
-.header .user{
+
+.header .user {
     position: relative;
     padding-top: 10px;
     right: 40px;
@@ -26,13 +29,15 @@ body{
     float: right;
     top: 0px;
 }
-.header .user img{
+
+.header .user img {
     position: relative;
     top: 3px;
     height: 40px;
     width: 40px;
 }
-.header .user h3{
+
+.header .user h3 {
     display: inline-block;
     position: relative;
     font-family: "Maiandra GD";
@@ -40,7 +45,8 @@ body{
     font-size: 135%;
     color: #2ef092;
 }
-.header .user .exit{
+
+.header .user .exit {
     position: relative;
     border-color: transparent;
     border-radius: 10px;
@@ -50,21 +56,23 @@ body{
     background: transparent;
     transition: background-color 0.2s, transform 0.3s;
 }
-.header .user .exit img{
+
+.header .user .exit img {
     position: relative;
     margin: -3px 0 0 -5px;
     height: 35px;
     width: 35px;
 }
-.header .user .exit:hover{
+
+.header .user .exit:hover {
     background-color: #f92767;
 }
-.header .user .exit:active{
+
+.header .user .exit:active {
     transform: translateY(2px);
 }
 
-
-.left-column{
+.left-column {
     position: fixed;
     display: inline-block;
     top: 150px;
@@ -73,24 +81,28 @@ body{
     height: 30%;
     float: left;
 }
-.left-column form{
+
+.left-column form {
     margin: 5px 0 0 3px;
 }
-.left-column h3{
+
+.left-column h3 {
     font-family: "Maiandra GD";
     color: #2ef092;
     font-size: 150%;
     text-shadow: black 1px 1px 2px;
     margin: 0px;
 }
-.left-column input{
+
+.left-column input {
     color: black;
     height: 20px;
     min-width: 62px;
     width: 50%;
     font-size: 75%;
 }
-.left-column button{
+
+.left-column button {
     border-color: transparent;
     border-radius: 2px;
     position: relative;
@@ -101,10 +113,12 @@ body{
     width: 26px;
     transition: background-color 0.3s;
 }
-.left-column button:hover{
+
+.left-column button:hover {
     background-color: #8c49b6;
 }
-.left-column button img{
+
+.left-column button img {
     position: absolute;
     filter: opacity(.6);
     top: -2px;
@@ -112,12 +126,17 @@ body{
     height: 25px;
     width: 25px;
 }
-.left-column button img:hover{
+
+.left-column button img:hover {
     filter: brightness(0) invert(1);
 }
 
+.center-column {
+    position: relative;
+    bottom: 80px;
+}
 
-.post{
+.post {
     position: relative;
     background-color: white;
     width: 50%;
@@ -127,26 +146,31 @@ body{
     padding: 1%;
     margin: 0 0 15px 0;
 }
-.post h3{
+
+.post h3 {
     font-family: "Maiandra GD";
 }
-.post-up{
+
+.post-up {
     position: relative;
     width: 100%;
 }
-.post .post-up .user-photo{
+
+.post .post-up .user-photo {
     display: inline-block;
     height: 40px;
     margin: 0 5px 0 0;
 }
-.post .post-up .user-name{
+
+.post .post-up .user-name {
     position: relative;
     display: inline-block;
     top: -15px;
     font-size: 20px;
     color: darkgrey;
 }
-.post .post-up .dateText{
+
+.post .post-up .dateText {
     display: inline-block;
     position: relative;
     font-size: 10px;
@@ -154,7 +178,8 @@ body{
     left: -75px;
     color: darkgrey;
 }
-.post .post-up .delete-button{
+
+.post .post-up .delete-button {
     position: relative;
     float: right;
     top: 0px;
@@ -165,28 +190,31 @@ body{
     border-color: transparent;
     cursor: pointer;
 }
-.post .post-up .delete-image{
+
+.post .post-up .delete-image {
     position: relative;
     height: 20px;
     width: 20px;
     transition: filter 0.3s;
 }
-.post .post-up .delete-image:hover{
+
+.post .post-up .delete-image:hover {
     filter: brightness(1) invert(1);
 }
 
-.post .post-content{
+.post .post-content {
     position: relative;
     margin: -10px 5px 0 0;
     width: 72%;
 }
 
-.post .post-down{
+.post .post-down {
     float: right;
     position: relative;
     width: 25%;
 }
-.post-down .like-button{
+
+.post-down .like-button {
     position: relative;
     background: transparent;
     border-color: transparent;
@@ -196,12 +224,14 @@ body{
     width: 23%;
     height: 17%;
 }
-.post-down .like-img{
+
+.post-down .like-img {
     position: relative;
     bottom: -1px;
     width: 100%;
 }
-.post-down .edit-button{
+
+.post-down .edit-button {
     background: transparent;
     border-color: transparent;
     padding: 0;
@@ -210,26 +240,30 @@ body{
     width: 23%;
     height: 17%;
 }
-.post-down .edit-img{
+
+.post-down .edit-img {
     position: relative;
     width: 100%;
     transition: filter 0.3s;
 }
-.post-down .edit-img:hover{
+
+.post-down .edit-img:hover {
     filter: brightness(1) invert(1);
 }
-.post-down .post-comment{
+
+.post-down .post-comment {
     font-size: 0.85em;
     margin: 2px 0 7px 0;
 }
-.post-down .tags{
+
+.post-down .tags {
     position: relative;
     font-size: 0.8em;
     color: blue;
     margin: 0 0 7px 0;
 }
 
-.right-column{
+.right-column {
     position: fixed;
     top: 150px;
     right: 0px;
@@ -238,7 +272,8 @@ body{
     height: 200px;
     float: right;
 }
-.right-column button{
+
+.right-column button {
     position: relative;
     top: 20%;
     left: 20%;
@@ -247,22 +282,48 @@ body{
     transition: background 0.3s;
     font-family: "Proxima Nova Alt Rg";
 }
-.right-column button:hover{
+
+.right-column button:hover {
     background: orange;
 }
 
-.footer{
+.paggination {
+    position: absolute;
+    margin: 0 0 40px 0;
+    left: 47%;
+    border-radius: 23px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-color: transparent;
+    transition: background-color 0.6s;
+}
+
+.paggination:hover {
+    background-color: #2ef092;
+}
+
+.paggination img {
+    position: relative;
+    left: -3px;
+    top: 1px;
+    width: 130%;
+}
+
+.footer {
     background: #c8e7a0;
     position: fixed;
     bottom: 0;
     height: 35px;
     width: 100%;
 }
-.footer .info{
+
+.footer .info {
     margin: 7px 0 0 5px;
     font-family: "Maiandra GD";
 }
-.footer .mail{
+
+.footer .mail {
     position: relative;
     top: -28px;
     left: -15px;
@@ -271,15 +332,14 @@ body{
     font-family: "Maiandra GD";
 }
 
-
-
 @font-face {
     font-family: "Proxima Nova Alt Rg";
     src: url("../fonts/Proxima.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
-@font-face{
+
+@font-face {
     font-family: "Maiandra GD";
     src: url("../fonts/MAIAN.ttf") format("truetype");
     font-style: normal;

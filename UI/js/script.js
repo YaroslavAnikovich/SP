@@ -96,8 +96,15 @@
 //     photoLink: 'https://dasdo.jpj'
 // }
 
-(function (){
-    function getPhotoPosts(skip = 0, top = 10, filter) {
+var Module = (function (){
+
+    var body = document.getElementsByClassName("body");
+    var centerColumn = document.createElement("div");
+    centerColumn.className = "center-column";
+
+    var postsArray = [];
+
+    function getPosts(skip = 0, top = 10, filter) {
         var add = top;
         var skipping = skip;
         var result = postsArray;
@@ -133,11 +140,11 @@
         return result;
     }
 
-    function getPhotoPost(id) {
+    function getPost(id) {
         return postsArray.find( post => post.id === id )
     }
 
-    function validatePhotoPost(photoPost){
+    function validate(photoPost){
         if(photoPost && photoPost.description.length >= 200){
             return false;
         }
@@ -145,14 +152,14 @@
             photoPost.author && photoPost.photoLink);
     }
 
-    function addPhotoPost(photoPost){
+    function add(photoPost){
         if(validatePhotoPost(photoPost)){
             postsArray.push(photoPost);
             return true;
         }else return false;
     }
 
-    function editPhotoPost(id, photoPost) {
+    function edit(id, photoPost) {
         const element = postsArray.find(post => post.id === id);
         if(element){
             if(photoPost.description && photoPost.description.length < 200){
@@ -174,12 +181,33 @@
         return validatePhotoPost(element);
     }
 
-    function removePhotoPost(id) {
+    function remove(id) {
         postsArray = postsArray.filter(post => post.id !== id);
         postsArray.forEach((post) =>{
             if(post.id - '0' > id - '0'){
                 post.id -= '1';
             }
         })
+    }
+
+    return{
+        getPhotoPosts: function (skip = 0, top = 10, filter) {
+            getPosts(skip = 0, top = 10, filter);
+        },
+        getPhotoPost: function (id) {
+            getPost(id);
+        },
+        validatePhotoPost: function (photoPost) {
+            validate(photoPost);
+        },
+        addPhotoPost: function (photoPost) {
+            add(photoPost);
+        },
+        editPhotoPost: function (id, photoPost) {
+            edit(id, photoPost);
+        },
+        removePhotoPost: function (id) {
+            remove(id);
+        }
     }
 }());
