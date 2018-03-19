@@ -1,112 +1,131 @@
-// var postsArray = [
-//     {
-//         id: '1',
-//         description: 'When I decided to make a photo of something incomprehensible',
-//         createdAt: new Date(),
-//         author: 'Y',
-//         photoLink: 'https://dpsfo.jpg',
-//         hashTags: [
-//             '#winter'
-//         ],
-//         likes: []
-//     },
-//     {
-//         id: '2',
-//         description: 'YAGUI',
-//         createdAt: new Date(),
-//         author: 'Y',
-//         photoLink: 'https://docs.google.com/fir/home.jpg',
-//         hashTags: [
-//             '#summer'
-//         ],
-//         likes: []
-//     },
-//     {
-//         id: '3',
-//         description: 'SNZhR',
-//         createdAt: new Date(),
-//         author: 'Y',
-//         photoLink: 'https://docs.google.com/fir/funnn.jpg',
-//         hashTags: [
-//             '#authumn'
-//         ],
-//         likes: []
-//     },
-//     {
-//         id: '4',
-//         description: 'SNZhR',
-//         createdAt: new Date(),
-//         author: 'V',
-//         photoLink: 'https://docs.google.com/fir/funnn.jpg',
-//         hashTags: [
-//             '#spring'
-//         ],
-//         likes: []
-//     },
-//     {
-//         id: '5',
-//         description: 'SNZhR',
-//         createdAt: new Date(),
-//         author: 'V',
-//         photoLink: 'https://docs.google.com/fir/funnn.jpg',
-//         hashTags: [
-//             '#winter'
-//         ],
-//         likes: []
-//     },
-//     {
-//         id: '6',
-//         description: 'SNZhR',
-//         createdAt: new Date(),
-//         author: 'Y',
-//         photoLink: 'https://docs.google.com/fir/funnn.jpg',
-//         hashTags: [
-//             '#summer'
-//         ],
-//         likes: []
-//     },
-//     {
-//         id: '7',
-//         description: 'SNZhR',
-//         createdAt: new Date(),
-//         author: 'Ed',
-//         photoLink: 'https://docs.google.com/fir/funnn.jpg',
-//         hashTags: [
-//             '#authumn'
-//         ],
-//         likes: []
-//     },
-//     {
-//         id: '8',
-//         description: 'SNZhR',
-//         createdAt: new Date(),
-//         author: 'Ed',
-//         photoLink: 'https://docs.google.com/fir/funnn.jpg',
-//         hashTags: [
-//             '#spring'
-//         ],
-//         likes: []
-//     }
-// ];
-// var photoPost = {
-//     id: '2',
-//     description: 'I am reach man',
-//     createdAt: new Date(),
-//     author: 'Y',
-//     photoLink: 'https://dasdo.jpj'
-// }
+var postsArray = [
+    {
+        id: '1',
+        description: 'When I decided to make a photo of something incomprehensible',
+        createdAt: new Date(),
+        author: 'Y',
+        photoLink: 'https://dpsfo.jpg',
+        hashTags: [
+            '#winter'
+        ],
+        likes: []
+    },
+    {
+        id: '2',
+        description: 'YAGUI',
+        createdAt: new Date(),
+        author: 'Y',
+        photoLink: 'https://docs.google.com/fir/home.jpg',
+        hashTags: [
+            '#summer'
+        ],
+        likes: []
+    },
+    {
+        id: '3',
+        description: 'SNZhR',
+        createdAt: new Date(),
+        author: 'Y',
+        photoLink: 'https://docs.google.com/fir/funnn.jpg',
+        hashTags: [
+            '#authumn'
+        ],
+        likes: []
+    },
+    {
+        id: '4',
+        description: 'SNZhR',
+        createdAt: new Date(),
+        author: 'V',
+        photoLink: 'https://docs.google.com/fir/funnn.jpg',
+        hashTags: [
+            '#spring'
+        ],
+        likes: []
+    },
+    {
+        id: '5',
+        description: 'SNZhR',
+        createdAt: new Date(),
+        author: 'V',
+        photoLink: 'https://docs.google.com/fir/funnn.jpg',
+        hashTags: [
+            '#winter'
+        ],
+        likes: []
+    },
+    {
+        id: '6',
+        description: 'SNZhR',
+        createdAt: new Date(),
+        author: 'Y',
+        photoLink: 'https://docs.google.com/fir/funnn.jpg',
+        hashTags: [
+            '#summer'
+        ],
+        likes: []
+    },
+    {
+        id: '7',
+        description: 'SNZhR',
+        createdAt: new Date(),
+        author: 'Ed',
+        photoLink: 'https://docs.google.com/fir/funnn.jpg',
+        hashTags: [
+            '#authumn'
+        ],
+        likes: []
+    },
+    {
+        id: '8',
+        description: 'SNZhR',
+        createdAt: new Date(),
+        author: 'Ed',
+        photoLink: 'https://docs.google.com/fir/funnn.jpg',
+        hashTags: [
+            '#spring'
+        ],
+        likes: []
+    },
+    {
+        id: '9',
+        description: 'asdqwe',
+        createdAt: new Date(),
+        author: 'Y',
+        photoLink: 'https://docs.google.com/fir/funnn.jpg',
+        hashTags: [
+            '#winter',
+            '#summer'
+        ],
+        likes: []
+    },
+    {
+        id: '10',
+        description: 'AHWE',
+        createdAt: new Date(),
+        author: 'AWh',
+        photoLink: 'https://docs.google.com/fir/ffsnn.jpg',
+        hashTags: [
+            '#summer'
+        ],
+        likes: []
+    }
+];
+var photoPost = {
+    id: '2',
+    description: 'I am reach man',
+    createdAt: new Date(),
+    author: 'Y',
+    photoLink: 'https://dasdo.jpj'
+}
 
 var Module = (function (){
 
-    var body = document.getElementsByClassName("body");
-    var centerColumn = document.createElement("div");
-    centerColumn.className = "center-column";
+    // var body = document.getElementsByClassName("body");
+    // var centerColumn = document.createElement("div");
+    // centerColumn.className = "center-column";
 
-    var postsArray = [];
-
-    function getPosts(skip = 0, top = 10, filter) {
-        var add = top;
-        var skipping = skip;
+    function getPosts(filter, skip = 0, top = 10 ) {
         var result = postsArray;
         if(filter){
             if(filter.author){
@@ -121,22 +140,13 @@ var Module = (function (){
                     filter.hashTags.forEach(tag =>{
                         x += post.hashTags.indexOf(tag)
                     });
-                    if(x > -1 * filter.hashTags.length){
+                    if(x >= 0){
                         return post;
                     }
                 });
             }
         }
-        result = result.filter((post) =>{
-            if(skipping-- <= 0){
-                return post;
-            }
-        });
-        result = result.filter((post) =>{
-            if(add-- > 0){
-                return post;
-            }
-        });
+        result = result.splice(skip, top);
         return result;
     }
 
@@ -153,7 +163,7 @@ var Module = (function (){
     }
 
     function add(photoPost){
-        if(validatePhotoPost(photoPost)){
+        if(validate(photoPost)){
             postsArray.push(photoPost);
             return true;
         }else return false;
@@ -178,36 +188,31 @@ var Module = (function (){
                 element.hashTags = photoPost.hashTags;
             }
         } else return false;
-        return validatePhotoPost(element);
+        return validate(element);
     }
 
     function remove(id) {
         postsArray = postsArray.filter(post => post.id !== id);
         postsArray.forEach((post) =>{
-            if(post.id - '0' > id - '0'){
+            if(parseInt(post.id) > parseInt(id)){
                 post.id -= '1';
             }
         })
     }
 
     return{
-        getPhotoPosts: function (skip = 0, top = 10, filter) {
-            getPosts(skip = 0, top = 10, filter);
-        },
-        getPhotoPost: function (id) {
-            getPost(id);
-        },
-        validatePhotoPost: function (photoPost) {
-            validate(photoPost);
-        },
-        addPhotoPost: function (photoPost) {
-            add(photoPost);
-        },
-        editPhotoPost: function (id, photoPost) {
-            edit(id, photoPost);
-        },
-        removePhotoPost: function (id) {
-            remove(id);
-        }
+        getPhotoPosts: getPosts,
+        getPhotoPost: getPost,
+        validatePhotoPost: validate,
+        addPhotoPost: add,
+        editPhotoPost: edit,
+        removePhotoPost: remove
     }
 }());
+
+console.log(Module.getPhotoPosts(
+    {hashTags: [
+        '#summer',
+            '#winter'
+    ],}))
+
