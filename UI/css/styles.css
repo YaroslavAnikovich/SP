@@ -14,13 +14,11 @@ body {
     box-shadow: 0 0 5px;
     z-index: 2;
 }
-
 .header .logo {
     height: 48px;
     width: 125px;
     padding: 1% 0 0 2%;
 }
-
 .header .user {
     position: relative;
     padding-top: 10px;
@@ -29,14 +27,12 @@ body {
     float: right;
     top: 0px;
 }
-
 .header .user img {
     position: relative;
     top: 3px;
     height: 40px;
     width: 40px;
 }
-
 .header .user h3 {
     display: inline-block;
     position: relative;
@@ -45,7 +41,6 @@ body {
     font-size: 135%;
     color: #2ef092;
 }
-
 .header .user .exit {
     position: relative;
     border-color: transparent;
@@ -56,18 +51,15 @@ body {
     background: transparent;
     transition: background-color 0.2s, transform 0.3s;
 }
-
 .header .user .exit img {
     position: relative;
     margin: -3px 0 0 -5px;
     height: 35px;
     width: 35px;
 }
-
 .header .user .exit:hover {
     background-color: #f92767;
 }
-
 .header .user .exit:active {
     transform: translateY(2px);
 }
@@ -81,11 +73,9 @@ body {
     height: 30%;
     float: left;
 }
-
 .left-column form {
     margin: 5px 0 0 3px;
 }
-
 .left-column h3 {
     font-family: "Maiandra GD";
     color: #2ef092;
@@ -93,7 +83,6 @@ body {
     text-shadow: black 1px 1px 2px;
     margin: 0px;
 }
-
 .left-column input {
     color: black;
     height: 20px;
@@ -101,7 +90,6 @@ body {
     width: 50%;
     font-size: 75%;
 }
-
 .left-column button {
     border-color: transparent;
     border-radius: 2px;
@@ -113,11 +101,9 @@ body {
     width: 26px;
     transition: background-color 0.3s;
 }
-
 .left-column button:hover {
     background-color: #8c49b6;
 }
-
 .left-column button img {
     position: absolute;
     filter: opacity(.6);
@@ -126,42 +112,40 @@ body {
     height: 25px;
     width: 25px;
 }
-
 .left-column button img:hover {
     filter: brightness(0) invert(1);
 }
 
 .center-column {
     position: relative;
+    width: 59%;
+    top: 80px;
+    left: 23%;
     bottom: 80px;
+    right: 18%;
 }
-
 .post {
     position: relative;
     background-color: white;
-    width: 50%;
-    top: 90px;
-    left: 28%;
+    width: 80%;
+    top: 0px;
+    left: 5%;
     right: 5%;
     padding: 1%;
     margin: 0 0 15px 0;
 }
-
 .post h3 {
     font-family: "Maiandra GD";
 }
-
 .post-up {
     position: relative;
     width: 100%;
 }
-
 .post .post-up .user-photo {
     display: inline-block;
     height: 40px;
     margin: 0 5px 0 0;
 }
-
 .post .post-up .user-name {
     position: relative;
     display: inline-block;
@@ -169,16 +153,14 @@ body {
     font-size: 20px;
     color: darkgrey;
 }
-
 .post .post-up .dateText {
     display: inline-block;
-    position: relative;
+    position: absolute;
     font-size: 10px;
-    top: -2px;
-    left: -75px;
+    left: 51px;
+    top: 18px;
     color: darkgrey;
 }
-
 .post .post-up .delete-button {
     position: relative;
     float: right;
@@ -190,30 +172,25 @@ body {
     border-color: transparent;
     cursor: pointer;
 }
-
 .post .post-up .delete-image {
     position: relative;
     height: 20px;
     width: 20px;
     transition: filter 0.3s;
 }
-
 .post .post-up .delete-image:hover {
     filter: brightness(1) invert(1);
 }
-
 .post .post-content {
     position: relative;
     margin: -10px 5px 0 0;
     width: 72%;
 }
-
 .post .post-down {
     float: right;
     position: relative;
     width: 25%;
 }
-
 .post-down .like-button {
     position: relative;
     background: transparent;
@@ -224,13 +201,11 @@ body {
     width: 23%;
     height: 17%;
 }
-
 .post-down .like-img {
     position: relative;
     bottom: -1px;
     width: 100%;
 }
-
 .post-down .edit-button {
     background: transparent;
     border-color: transparent;
@@ -240,22 +215,18 @@ body {
     width: 23%;
     height: 17%;
 }
-
 .post-down .edit-img {
     position: relative;
     width: 100%;
     transition: filter 0.3s;
 }
-
 .post-down .edit-img:hover {
     filter: brightness(1) invert(1);
 }
-
 .post-down .post-comment {
     font-size: 0.85em;
     margin: 2px 0 7px 0;
 }
-
 .post-down .tags {
     position: relative;
     font-size: 0.8em;
@@ -272,7 +243,6 @@ body {
     height: 200px;
     float: right;
 }
-
 .right-column button {
     position: relative;
     top: 20%;
@@ -282,14 +252,13 @@ body {
     transition: background 0.3s;
     font-family: "Proxima Nova Alt Rg";
 }
-
 .right-column button:hover {
     background: orange;
 }
 
 .paggination {
-    position: absolute;
-    margin: 0 0 40px 0;
+    position: relative;
+    margin: 70px 0 40px 0;
     left: 47%;
     border-radius: 23px;
     width: 40px;
@@ -298,15 +267,13 @@ body {
     border-color: transparent;
     transition: background-color 0.6s;
 }
-
 .paggination:hover {
     background-color: #2ef092;
 }
-
 .paggination img {
     position: relative;
     left: -3px;
-    top: 1px;
+    top: 2px;
     width: 130%;
 }
 
@@ -317,12 +284,10 @@ body {
     height: 35px;
     width: 100%;
 }
-
 .footer .info {
     margin: 7px 0 0 5px;
     font-family: "Maiandra GD";
 }
-
 .footer .mail {
     position: relative;
     top: -28px;
