@@ -1,4 +1,5 @@
-var user = 'Y';
+var user = 'Ed';
+
 var Module = (function () {
 
     var postsArray = [
@@ -347,7 +348,13 @@ var Module = (function () {
 
 var Dom = (function(){
 
+    function setUser(){
+        if(user){
+            document.getElementsByClassName('username')[0].textContent = user;
+        } else{
 
+        }
+    }
     function add(post){
         var newPost = true;
         var flag = Module.addPhotoPost(post);
@@ -368,9 +375,10 @@ var Dom = (function(){
                 </div>
                 <img src=` + post.photoLink + ` alt="post-content" class="post-content">
                 <div class="post-down">
-                    <button class="like-button"><img src="../images/not_liked.png" alt="heart" class="like-img"></button>
-                    <button class="edit-button"><img src="../images/pencil.png" alt="pencil" class="edit-img" 
-                        onclick="Dom.editPhotoPost(parentNode.parentNode.id)"></button>
+                    <button class="like-button" onclick="Dom.likePhotoPost(parentNode.parentNode.id)">
+                        <img src="../images/not_liked.png" alt="heart" class="like-img">
+                    </button>
+                    <button class="edit-button" onclick="Dom.editPhotoPost(parentNode.parentNode.id)"><img src="../images/pencil.png" alt="pencil" class="edit-img"></button>
                     <h3 class="post-comment">` + post.description + `</h3>
                     <h3 class="tags">` + tags + `</h3>
                 </div>`;
@@ -385,7 +393,9 @@ var Dom = (function(){
                 </div>
                 <img src=` + post.photoLink + ` alt="post-content" class="post-content">
                 <div class="post-down">
-                    <button class="like-button"><img src="../images/not_liked.png" alt="heart" class="like-img"></button>
+                    <button class="like-button" onclick="Dom.likePhotoPost(parentNode.parentNode.id)">
+                        <img src="../images/not_liked.png" alt="heart" class="like-img">
+                    </button>
                     <h3 class="post-comment">` + post.description + `</h3>
                     <h3 class="tags">` + tags + `</h3>
                 </div>`;
@@ -424,10 +434,32 @@ var Dom = (function(){
         console.log()
     }
 
+    function like(id){
+        if(Module.tape.find(post => post.id == id)){
+            var postLike = document.getElementById(id).childNodes[4].childNodes[1].childNodes[1];
+            Module.tape.forEach(post => {
+                if(post.id == id){
+                    if(post.likes.length === 0 || !post.likes.find(usr => usr == user)){    
+                        post.likes.push(user);
+                        postLike.setAttribute("src", "../images/liked.png");
+                        Module.tape.find(post => post.id == id).likes.push;
+                    } else{
+                        post.likes = post.likes.filter(el => el !== user);
+                        postLike.setAttribute("src", "../images/not_liked.png");
+                    }
+                }
+            })
+        }
+
+    }
+
     return{
+        user : user,
+        setUserName: setUser,
         addPhotoPost: add,
         editPhotoPost: edit,
-        removePhotoPost: remove
+        removePhotoPost: remove,
+        likePhotoPost: like,
     }
 }());
 
