@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>HD_Project</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="../js/script.js"></script>
+</head>
+
+<body class="body">
+
+<div class="header">
+    <img class="logo" src="../images/logo.png" alt="">
+    <div class="user">
+        <h3 class="username">
+            Yaraslau
+        </h3>
+        <button class="exit">
+            <img src="../images/exit.png" alt="">
+        </button>
+    </div>
+</div>
+
+<div class="left-column">
+
+    <form action="" method="" onsubmit="return false;" id="name-search">
+        <h3>Search by Name</h3>
+        <input type="text" placeholder="Enter name...">
+        <button><img src="../images/loupe.png" alt=""></button>
+    </form>
+
+    <form action="" method="" onsubmit="return false;" id="date-search">
+        <h3>Search by Date</h3>
+        <input type="text" placeholder="DD-MM-YY">
+        <button><img src="../images/loupe.png" alt=""></button>
+    </form>
+
+    <form action="" method="" onsubmit="return false;" id="tag-search">
+        <h3>Search by Tag</h3>
+        <input type="text" placeholder="#Enter#Tags">
+        <button><img src="../images/loupe.png" alt=""></button>
+    </form>
+</div>
+<div class="center-column">
+    <script>
+        var j = 0;
+
+        while (j < 10) {
+            Dom.addPhotoPost(Module.posts[j++]);
+        }
+    </script>
+</div>
+<div class="right-column">
+    <button class="creating-button" onclick="Dom.addPhotoPost(Module.posts[Module.i++])">
+        Create new post
+    </button>
+</div>
+
+<button class="paggination"><img src="../images/reload.png" alt=""></button>
+
+<div class="footer">
+    <p class="info">Collective_photo_portal_8g_2c ©Created by Yaraslau_Anikovich 01_02_2018</p>
+    <p class="mail">yvanikovich@mail.ru</p>
+</div>
+<!--<div class="registration">-->
+    <!--<h2 class="greeting">You're welcome! Please sign up or sign in</h2>-->
+    <!--<form class="sign up">-->
+        <!--<input class="login" type="text" placeholder="create login">-->
+        <!--<input class="password" type="text" placeholder="create password">-->
+        <!--<button>Sign up</button>-->
+    <!--</form>-->
+    <!--<form class="sign in">-->
+        <!--<input class="login" type="text" placeholder="create login">-->
+        <!--<input class="password" type="text" placeholder="create password">-->
+        <!--<button>Sign in</button>-->
+    <!--</form>-->
+<!--</div>-->
+
+</body>
